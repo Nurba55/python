@@ -3,11 +3,11 @@ from math import floor
 from random randint
 
 class Character(ABC):
-	def __init__(self, name, level, strengh=8, dixterity=8, constitution=8, intilligence=8, wisdom=8, charisma=8, max_xp, hp, armour_class, initiative):
+	def __init__(self, name, level, strengh=8, dexterity=8, constitution=8, intilligence=8, wisdom=8, charisma=8, max_xp, hp, armour_class, initiative):
 		self.name = name
 		self.level = level
 		self.strengh = strengh
-		self.dixterity = dixterity
+		self.dixterity = dexterity
 		self.constitution = constitution
 		self.intilligence = intilligence
 		self.wisdom = wisdom
@@ -18,7 +18,7 @@ class Character(ABC):
 		self.initiative = randint(1, 21) + floor((self.dixterity + 10) / 2)
 
 	def attack(self):
-		return randint(1, 13) + floor((self.strengh - 10) / 2)
+		return randint(1, 13) + floor((self.strength - 10) / 2)
 
 	def save_throw(self, attribute):
 		return randint(1, 21) + floor((self.max_xp + 10) / 2)
