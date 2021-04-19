@@ -3,13 +3,13 @@ from math import floor
 from random randint
 
 class Character(ABC):
-	def __init__(self, name, level, strengh=8, dexterity=8, constitution=8, intilligence=8, wisdom=8, charisma=8, max_xp, hp, armour_class, initiative):
+	def __init__(self, name, level, strengh=8, dexterity=8, constitution=8, intelligence=8, wisdom=8, charisma=8, max_xp, hp, armour_class, initiative):
 		self.name = name
 		self.level = level
 		self.strengh = strengh
 		self.dixterity = dexterity
 		self.constitution = constitution
-		self.intilligence = intilligence
+		self.intelligence = intelligence
 		self.wisdom = wisdom
 		self.charisma = charisma
 		self.max_xp = 10 + floor((self.constitution + 10) / 2) + randint(1, 11) + 3
