@@ -12,9 +12,9 @@ class Character(ABC):
 		self.intelligence = intelligence
 		self.wisdom = wisdom
 		self.charisma = charisma
-		self.max_xp = 10 + floor((self.constitution + 10) / 2) + randint(1, 11) + 3
+		self.max_xp = 10 + floor((self.constitution - 10) / 2) + randint(1, 11) + 3
 		self.hp = self.max_xp
-		self.armour_class = 15 + floor((self.dixterity + 10) / 2)
+		self.armour_class = 15 + floor((self.dexterity - 10) / 2)
 		self.initiative = randint(1, 21) + floor((self.dexterity + 10) / 2)
 
 	def attack(self):
