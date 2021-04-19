@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 from math import floor
+from random randint
 
 class Character(ABC):
 	def __init__(self, name, level, strengh=8, dixterity=8, constitution=8, intilligence=8, wisdom=8, charisma=8, max_xp, hp, armour_class, initiative):
