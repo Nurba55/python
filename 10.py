@@ -34,4 +34,4 @@ class Hero(Character):
 
 class Dragon(Character):
 	def perk(self):
-		return randint(1, 17) + floor((self.hp + 10) / 2)
+		return randint(1, 17) + floor((self.hp - 10) / 2)
