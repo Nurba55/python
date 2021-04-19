@@ -6,7 +6,7 @@ class Character(ABC):
 	def __init__(self, name, level=1, strengh=8, dexterity=8, constitution=8, intelligence=8, wisdom=8, charisma=8, max_xp, hp, armour_class, initiative):
 		self.name = name
 		self.level = level
-		self.strengh = strengh
+		self.strength = strength
 		self.dexterity = dexterity
 		self.constitution = constitution
 		self.intelligence = intelligence
