@@ -15,7 +15,7 @@ class Character(ABC):
 		self.max_xp = 10 + floor((self.constitution - 10) / 2) + randint(1, 11) + 3
 		self.hp = self.max_xp
 		self.armour_class = 15 + floor((self.dexterity - 10) / 2)
-		self.initiative = randint(1, 21) + floor((self.dexterity + 10) / 2)
+		self.initiative = randint(1, 21) + floor((self.dexterity - 10) / 2)
 
 	def attack(self):
 		return randint(1, 13) + floor((self.strength - 10) / 2)
