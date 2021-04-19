@@ -7,7 +7,7 @@ class Character(ABC):
 		self.name = name
 		self.level = level
 		self.strengh = strengh
-		self.dixterity = dexterity
+		self.dexterity = dexterity
 		self.constitution = constitution
 		self.intelligence = intelligence
 		self.wisdom = wisdom
