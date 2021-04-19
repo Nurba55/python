@@ -21,7 +21,7 @@ class Character(ABC):
 		return randint(1, 13) + floor((self.strength - 10) / 2)
 
 	def save_throw(self, attribute):
-		return randint(1, 21) + floor((self.max_xp + 10) / 2)
+		return randint(1, 21) + floor((self.max_xp - 10) / 2)
 
 
 	@abstractmethod
